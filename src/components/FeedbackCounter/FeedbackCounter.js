@@ -2,8 +2,8 @@ import React from 'react'
 import style from './FeedbackCounter.module.css'
 import PropTypes from 'prop-types';
 
-const FeedbackCounter = ({ options, onLeaveFeedback }) => {
-    const { good, neutral, bad } = options;
+const FeedbackCounter = ({  onLeaveFeedback }) => {
+    // const { good, neutral, bad } = options;
     
         return (
                 
@@ -13,7 +13,7 @@ const FeedbackCounter = ({ options, onLeaveFeedback }) => {
                         name="good"
                         type="button"
                         onClick={onLeaveFeedback}
-                        data-value={good}
+                        // data-value={good}
                     >Good</button>
                 
                     <button
@@ -21,7 +21,7 @@ const FeedbackCounter = ({ options, onLeaveFeedback }) => {
                         name="neutral"
                         type="button"
                         onClick={onLeaveFeedback}
-                        data-value={neutral}
+                        // data-value={neutral}
                     >Neutral</button>
                 
                     <button
@@ -29,18 +29,18 @@ const FeedbackCounter = ({ options, onLeaveFeedback }) => {
                         name="bad"
                         type="button"
                         onClick={onLeaveFeedback}
-                        data-value={bad}
+                        // data-value={bad}
                     >Bad</button>
                 </div>
         )
 }
 
 FeedbackCounter.propTypes = {
-    options: PropTypes.shape({
-        good: PropTypes.number.isRequired,
-        neutral: PropTypes.number.isRequired,
-        bad: PropTypes.number.isRequired,
-    }).isRequired,
+    // options: PropTypes.shape({
+        // good: PropTypes.number.isRequired,
+        // neutral: PropTypes.number.isRequired,
+        // bad: PropTypes.number.isRequired,
+    // }).isRequired,
     onLeaveFeedback: PropTypes.func.isRequired,
 };
 
